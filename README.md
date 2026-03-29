@@ -55,11 +55,11 @@ COMPAS is a risk assessment tool used in the U.S. criminal justice system to pre
 | `table(pred, actual)` | `pd.crosstab()` or `confusion_matrix()` |
 
 ## Instructions for Reproducing the Results
-Install necessary libraries: 
-pip install pandas
-pip install numpy
-pip install matplotlib
-pip install seaborn
-pip install statsmodels
-pip install scipy
-pip install scikit-learn
+### Install necessary libraries: 
+- pip install pandas
+- pip install numpy
+- pip install matplotlib
+- pip install seaborn
+- pip install statsmodels
+- pip install scipy
+- pip install scikit-learn
