@@ -1,4 +1,5 @@
-# Individual-Homework-1---Translating-an-R-Machine-Learning-Workflow-into-Python
+# Individual-Homework-1
+# Translating-an-R-Machine-Learning-Workflow-into-Python
 Translating an R Machine Learning Workflow into Python
 # Purpose of the Analysis
 This project translates a machine learning workflow from R to Python, replicating an analysis of the COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) recidivism prediction algorithm.
