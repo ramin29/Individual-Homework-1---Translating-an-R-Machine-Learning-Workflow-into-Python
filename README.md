@@ -63,5 +63,5 @@ COMPAS is a risk assessment tool used in the U.S. criminal justice system to pre
 - pip install statsmodels
 - pip install scipy
 - pip install scikit-learn
-### or check whether these libraries have been installed already:
+### Or check whether these libraries have been installed already:
 - pip list
