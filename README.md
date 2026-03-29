@@ -42,7 +42,7 @@ COMPAS is a risk assessment tool used in the U.S. criminal justice system to pre
 | `head(df, n)` | `df.head(n)` |
 | `nrow(df)` | `len(df)` |
 | `glimpse(df)` | `df.info()` |
-| `summary(factor)` | `series.value_counts()` |
+| `summary(factor)` | `factor.value_counts()` |
 | `filter(df, cond)` | `df[cond]` or `df.query()` |
 | `mutate(df, col=val)` | `df["col"] = val` |
 | `select(df, cols)` | `df[cols]` |
