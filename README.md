@@ -16,3 +16,40 @@ COMPAS is a risk assessment tool used in the U.S. criminal justice system to pre
 - Are COMPAS risk scores distributed differently across racial groups?
 - Does the predictive model exhibit differential error rates by race?
 - What are the relative risks associated with demographic factors in predicting high-risk classification?
+
+## Python Libraries Used
+### Core Data Manipulation
+- pandas: Data manipulation and analysis (equivalent to R's dplyr)
+- numpy: Numerical computations
+### Visualization
+- matplotlib: Base plotting library
+- seaborn: Statistical visualizations (equivalent to R's ggplot2)
+
+### Statistical Modeling
+- statsmodels: Logistic regression with formula interface (equivalent to R's glm())
+- scipy: Statistical functions (e.g., expit for logistic transformation)
+
+### Model Evaluation
+- scikit-learn: Confusion matrix, classification metrics
+
+## R to Python Translation Reference
+
+| R Function | Python Equivalent |
+|------------|-------------------|
+| `library(dplyr)` | `import pandas as pd` |
+| `library(ggplot2)` | `import seaborn as sns; import matplotlib.pyplot as plt` |
+| `read.csv()` | `pd.read_csv()` |
+| `head(df, n)` | `df.head(n)` |
+| `nrow(df)` | `len(df)` |
+| `glimpse(df)` | `df.info()` |
+| `summary(factor)` | `series.value_counts()` |
+| `filter(df, cond)` | `df[cond]` or `df.query()` |
+| `mutate(df, col=val)` | `df["col"] = val` |
+| `select(df, cols)` | `df[cols]` |
+| `group_by() %>% summarise()` | `df.groupby().agg()` or `.apply()` |
+| `xtabs(~ a + b)` | `pd.crosstab(df["a"], df["b"])` |
+| `as.factor()` | `.astype("category")` |
+| `relevel(factor, ref)` | `.cat.reorder_categories([ref, ...])` |
+| `glm(..., family=binomial)` | `smf.logit()` or `smf.glm(..., family=Binomial())` |
+| `predict(model, type="response")` | `model.predict()` |
+| `table(pred, actual)` | `pd.crosstab()` or `confusion_matrix()` |
