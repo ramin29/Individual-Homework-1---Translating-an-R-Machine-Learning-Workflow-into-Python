@@ -32,6 +32,10 @@ COMPAS is a risk assessment tool used in the U.S. criminal justice system to pre
 ### Model Evaluation
 - scikit-learn: Confusion matrix, classification metrics
 
+## Instructions for Reproducing the Results
+Install necessary libraries: 
+pip install pandas numpy matplotlib seaborn statsmodels scipy scikit-learn
+
 ## R to Python Translation Reference
 
 | R Function | Python Equivalent |
