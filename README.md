@@ -56,13 +56,40 @@ COMPAS is a risk assessment tool used in the U.S. criminal justice system to pre
 | `table(pred, actual)` | `pd.crosstab()` or `confusion_matrix()` |
 
 ## Instructions for Reproducing the Results
-### Install necessary libraries before running the code: 
-- pip install pandas
-- pip install numpy
-- pip install matplotlib
-- pip install seaborn
-- pip install statsmodels
-- pip install scipy
-- pip install scikit-learn
-### Or check whether these libraries have been installed already:
-- pip list
+
+Step 1: Environment Setup
+
+Install required libraries:
+
+    pip install pandas numpy matplotlib seaborn statsmodels scipy scikit-learn shap lime dice-ml
+
+Or check if libraries are already installed:
+
+    pip list
+
+Step 2: Dataset
+
+The analysis uses the COMPAS recidivism dataset from ProPublica.
+
+Load data directly from URL:
+
+    import pandas as pd
+    url = "https://raw.githubusercontent.com/propublica/compas-analysis/master/compas-scores-two-years.csv"
+    data = pd.read_csv(url)
+
+Step 3: Running the Analysis
+
+Option A - Jupyter Notebook (Google Colab):
+1. Upload the notebook to Google Colab
+2. Run the installation cell first: !pip install shap lime dice-ml
+3. Execute cells sequentially from top to bottom
+
+Option B - Local Jupyter Notebook:
+1. Install Jupyter: pip install jupyter
+2. Launch: jupyter notebook
+3. Open the .ipynb file and run cells sequentially
+
+Option C - Python Script:
+1. Run: python compas_explainability_analysis.py
+
+Step 4: Expected Outputs
